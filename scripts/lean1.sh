@@ -114,3 +114,8 @@ wget -P target/linux/rockchip/armv8/base-files/etc/init.d/ https://github.com/fr
 wget -P target/linux/rockchip/armv8/base-files/usr/bin/ https://github.com/friendlyarm/friendlywrt/raw/master-v19.07.1/target/linux/rockchip-rk3399/base-files/usr/bin/start-rk3399-pwm-fan.sh
 chmod u+x target/linux/rockchip/armv8/base-files/etc/init.d/fa-rk3399-pwmfan
 chmod u+x target/linux/rockchip/armv8/base-files/usr/bin/start-rk3399-pwm-fan.sh
+
+rm -rf package/lean/autosamba
+rm -rf package/lean/vsftpd-alt
+rm -rf package/feeds/luci/luci-app-vsftpd
+rm -rf package/feeds/luci/luci-app-samba4
